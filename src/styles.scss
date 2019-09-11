@@ -66,6 +66,10 @@ $navbar-lightmode: #454545;
             border: 1px solid $dark-title;
             color: $dark-title;
         }
+        .btn:hover{
+            background-color: $content-color;
+            color: $base-color;
+        }
         .modal-container{
             background-color: #f5f5f5;
             color: $dark-content;
@@ -217,17 +221,17 @@ $navbar-lightmode: #454545;
       padding: 10px 0px 10px 0px;
       text-decoration: none;
   }
-  .icon2 .fa{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-  }
-  .icon2 .fab{
-      color: #00ffff;
-      padding: 10px 0px 10px 0px;
-      text-decoration: none;
-  }
+  .icon2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.icon2 a{
+    color: #00ffff;
+    padding: 10px 0px 10px 0px;
+    text-decoration: none;
+}
   .icon-3d {
       -webkit-animation: icon3d 40ms 10;
       animation: icon3d 40ms 10;
@@ -520,14 +524,16 @@ $navbar-lightmode: #454545;
     border: 1px solid #f2f2f2;
     background: transparent;
     color: #00ffff;
-    padding: 20px;
+    padding: 70px;
+    margin: 0px 10px 0px 10px;
     font-size: 15px;
     cursor: pointer;
     outline: none;
   }
   
   .btn:hover {
-    background-color: #1b2938;
+    background-color: $input-background;
+    color: $base-color
   }
   
   .modal-cover {
@@ -603,11 +609,16 @@ $navbar-lightmode: #454545;
         align-items: center;
         width: 100%;
     }
+    .sites{
+        margin-bottom: 40px;
+    }
     .sites a{
         color: $base-color;
         font-size: 20px;
         padding: 10px;
         outline: none;
+        text-decoration: none;
+        margin-bottom: 30px;
     }
   
   .modal-container.modal-container-active {
@@ -932,17 +943,17 @@ body.dark-mode {
           padding: 10px 0px 10px 0px;
           text-decoration: none;
       }
-      .icon2 .fa{
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
-      }
-      .icon2 .fab{
-          color: #00ffff;
-          padding: 10px 0px 10px 0px;
-          text-decoration: none;
-      }
+      .icon2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .icon2 a{
+        color: #00ffff;
+        padding: 10px 0px 10px 0px;
+        text-decoration: none;
+    }
       .icon-3d {
           -webkit-animation: icon3d 40ms 10;
           animation: icon3d 40ms 10;
@@ -1164,17 +1175,6 @@ body.dark-mode {
   display: block;
 }
 
-.contact_icon a:hover i {
-  display: none;
-  -webkit-animation: icon3d 0ms infinite;
-  animation: icon3d 0ms infinite;
-}
-.contact_icon a:hover span {
-  display: block;
-  -webkit-animation: icon3d 40ms infinite;
-  animation: icon3d 40ms infinite;
-}
-
 //skills
 .skillsPage{
   width: 95%;
@@ -1230,14 +1230,16 @@ body.dark-mode {
     border: 1px solid #f2f2f2;
     background: transparent;
     color: #00ffff;
-    padding: 20px;
+    padding: 60px;
+    margin: 0px 10px 0px 10px;
     font-size: 15px;
     cursor: pointer;
     outline: none;
   }
   
   .btn:hover {
-    background-color: #1b2938;
+    background-color:  $input-background;
+    color: $base-color
   }
   
   .modal-cover {
@@ -1262,7 +1264,7 @@ body.dark-mode {
         width: 950px;
         min-height: 300px;
         left: 50%;
-        top: 20%;
+        top: 15%;
         margin-left: -450px;
         display: none;
     }
@@ -1313,12 +1315,27 @@ body.dark-mode {
         align-items: center;
         width: 100%;
     }
+    .sites{
+        margin-bottom: 30px;
+    }
     .sites a{
         color: $base-color;
         font-size: 20px;
         padding: 10px;
         outline: none;
+        text-decoration: none;
+        margin-bottom: 20px;
     }
+    .sites a:hover i {
+        display: none;
+        -webkit-animation: icon3d 0ms infinite;
+        animation: icon3d 0ms infinite;
+      }
+      .sites a:hover span {
+        display: block;
+        -webkit-animation: icon3d 40ms infinite;
+        animation: icon3d 40ms infinite;
+      }
   
   .modal-container.modal-container-active {
     display: block;
@@ -1487,6 +1504,18 @@ body.dark-mode {
   .projects .btn{
       margin-bottom: 50px;
   }
+  .btn {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #f2f2f2;
+    background: transparent;
+    color: #00ffff;
+    padding: 60px;
+    margin: 0px 5px 0px 5px;
+    font-size: 15px;
+    cursor: pointer;
+    outline: none;
+  }
 
   //about
   .aboutPage{
@@ -1495,7 +1524,7 @@ body.dark-mode {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 100vh;
+    height: 91vh;
     padding-top: 100px; 
   }
   .title{
@@ -1515,7 +1544,7 @@ body.dark-mode {
       width: 100%;
   }
   .profileImage img{
-    width: 400px;
+    width: 600px;
   }
 
   //skills
@@ -1638,6 +1667,172 @@ body.dark-mode {
 }
 
 @media screen and (max-width: 768px) {
+//lightmode
+body.light-mode {
+    background-color: #fff;
+    color: #333;
+    transition: background-color 0.3s ease;
+
+    .page{
+        background-color: #f5f5f5;
+    }
+
+    p{
+        color: $dark-content;
+    }
+    h2{
+        color: $dark-title;
+    }
+    h3{
+        color: $dark-content;
+    }
+    h4{
+        color: $dark-content;
+    }
+    hr{
+        border: 2px solid $dark-content;
+    }
+    .info h1{
+        color: $dark-title;
+    }
+    .contact_icon h1{
+        color: $dark-title;
+    }
+    .form-fields{
+        background-color: $input-background;
+        color: $dark-content;
+    }
+    .form_button{
+        background-color: $input-background;
+    }
+    .navbar {
+        background-color: $navbar-lightmode;
+      }
+    .lightMode{
+        color: #333;
+        background-color: transparent;
+        font-size: 10px;
+        border: none;
+        font-weight: 600;
+    }
+    .lightMode:hover{
+        color: $base-color;
+        cursor: pointer;
+    }
+    //projects
+    .btn{
+        border: 1px solid $dark-title;
+        color: $dark-title;
+    }
+    .modal-container{
+        background-color: #f5f5f5;
+        color: $dark-content;
+    }
+    
+  }
+  
+body.dark-mode {
+    .lightMode{
+        color:#f6f6f6;
+        border: none;
+        background-color: transparent;
+        font-size: 10px;
+        font-weight: 600;
+    }
+    .lightMode:hover{
+        color: $base-color;
+        cursor: pointer;
+    }
+
+    .navbar {
+      background-color: #1b2938;
+    }
+    .menu-section{
+        background-color: #1b2938;
+    }
+    .page{
+        background-color: #10171d;
+    }
+    .form-fields{
+        background-color: #1b2938;
+        color: $dark-content;
+    }
+    .form_button{
+        background-color: #1b2938;
+    }
+  
+    .dark-mode-toggle > button {
+      color: #999;
+      &:last-child {
+        color: lightblue;
+      }
+    }
+  }
+
+  //toggle bar 
+  .dark-mode-toggle {
+    display: flex;
+    margin: 0 auto;
+    & > button {
+      font-size: 1.2em;
+      background: none;
+      border: none;
+      color: #ffe600;
+      cursor: pointer;
+      transition: color 0.3s ease;
+      &:last-child {
+        color: #666;
+      }
+  
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+  
+  .toggle-control {
+    position: relative;
+    padding: 0 4px;
+    display: flex;
+    align-items: center;
+  }
+  
+  input[type='checkbox'].dmcheck {
+    width: 40px;
+    height: 10px;
+    background: #555;
+    position: relative;
+    border-radius: 5px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    vertical-align: 2px;
+    outline: none;
+  
+    &:checked + label {
+      left: 30px;
+    }
+  
+    &:focus-visible {
+      outline: solid 2px white;
+    }
+  
+    & + label {
+      display: inline-block;
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      transition: all 0.3s ease;
+      cursor: pointer;
+      position: absolute;
+      left: 2px;
+      background: #fff;
+      opacity: 0.9;
+      background-color: #f6f6f6;
+    }
+  }
+
 .page{
     display: flex;
     flex-direction: column;
@@ -1790,6 +1985,18 @@ body.dark-mode {
   .projects .btn{
       margin-bottom: 50px;
   }
+  .btn {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #f2f2f2;
+    background: transparent;
+    color: #00ffff;
+    padding: 30px;
+    margin: 0px 5px 0px 5px;
+    font-size: 15px;
+    cursor: pointer;
+    outline: none;
+  }
 
   //about
   .aboutPage{
@@ -1824,7 +2031,7 @@ body.dark-mode {
   //skills
   .skillsPage{
     width: 100%;
-    height: 94vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1977,103 +2184,6 @@ body.dark-mode {
 
 
 @media screen and (max-width: 480px){
-    body.dark-mode {
-        display: none;
-        .lightMode{
-            color:#f6f6f6;
-            border: none;
-            background-color: transparent;
-            font-size: 5px;
-            font-weight: 300;
-        }
-        .lightMode:hover{
-            color: $base-color;
-            cursor: pointer;
-        }
-    
-        .navbar {
-          background-color: #1b2938;
-        }
-        .menu-section{
-            background-color: #1b2938;
-        }
-        .page{
-            background-color: #10171d;
-        }
-      
-        .dark-mode-toggle > button {
-          color: #999;
-          &:last-child {
-            color: lightblue;
-          }
-        }
-      }
-    
-      //toggle bar 
-      .dark-mode-toggle {
-        display: flex;
-        margin: 0 auto;
-        & > button {
-          font-size: 1.2em;
-          background: none;
-          border: none;
-          color: #ffe600;
-          cursor: pointer;
-          transition: color 0.3s ease;
-          &:last-child {
-            color: #666;
-          }
-      
-          &:focus {
-            outline: none;
-          }
-        }
-      }
-      
-      .toggle-control {
-        position: relative;
-        padding: 0 4px;
-        display: flex;
-        align-items: center;
-      }
-      
-      input[type='checkbox'].dmcheck {
-        width: 20px;
-        height: 10px;
-        background: #555;
-        position: relative;
-        border-radius: 5px;
-        -webkit-appearance: none;
-        -moz-appearance: none;
-        appearance: none;
-        cursor: pointer;
-        vertical-align: 2px;
-        outline: none;
-      
-        &:checked + label {
-          left: 10px;
-        }
-      
-        &:focus-visible {
-          outline: solid 2px white;
-        }
-      
-        & + label {
-          display: inline-block;
-          width: 10px;
-          height: 10px;
-          border-radius: 50%;
-          transition: all 0.3s ease;
-          cursor: pointer;
-          position: absolute;
-          left: 20px;
-          background: #fff;
-          opacity: 0.9;
-          background-color: #f6f6f6;
-        }
-      }
-
-
 
     .page{
         display: flex;

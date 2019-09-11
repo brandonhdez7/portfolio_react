@@ -59,7 +59,7 @@ class Hamburger extends Component {
       <div>
         <div style={styles.container}>
           <MenuButton open={this.state.menuOpen} onClick={()=>this.handleMenuClick()} color='white'/>
-          <div style={styles.logo}>Logo</div>
+          <div style={styles.logo}></div>
         </div>
         <Menu open={this.state.menuOpen}>
           {menuItems}

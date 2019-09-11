@@ -22,7 +22,7 @@ class Header extends Component {
                     </div>
                     <div className="icon2">
                         <a href="https://www.linkedin.com/in/brandon-hernandez-34254b175/" target="_blank"><i className="fab fa-linkedin fa-lg icon-3d"></i><span>Linkedin</span></a>
-                        <a href="https://docs.google.com/document/d/12NPapeAoa-euUMEh4euaZ6697IGdC9fjA3JDo2lduEs/edit?usp=sharing" target="_blank"><i className="fab fa-file-alt fa-lg icon-3d"></i><span>Resume</span></a>
+                        <a href="https://docs.google.com/document/d/12NPapeAoa-euUMEh4euaZ6697IGdC9fjA3JDo2lduEs/edit?usp=sharing" target="_blank"><i className="fa fa-file-alt fa-lg icon-3d"></i><span>Resume</span></a>
                         <a href="https://github.com/brandonhdez7" target="_blank"><i className="fab fa-github fa-lg icon-3d"></i><span>Github</span></a>
                     </div>
                 </div>

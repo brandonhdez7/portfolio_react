@@ -27,9 +27,9 @@ class Skills extends Component {
                             <p>Anything in here will be replaced on browsers that support the canvas element</p>
                             </canvas>
                         </div>
-                        <div id="tags">
+                        {/* <div id="tags">
                             <ul>
-                            {/* <li><a href="http://www.google.com"></a></li>
+                            <li><a href="http://www.google.com"></a></li>
                             <li><a href="#">Javascript</a></li>
                             <li><a href="#">React</a></li>
                             <li><a href="#">HTML</a></li>
@@ -45,9 +45,9 @@ class Skills extends Component {
                             <li><a href="#">Mysql</a></li>
                             <li><a href="#">AWS</a></li>
                             <li><a href="#">Firebase</a></li>
-                            <li><a href="#">Unit Testing</a></li> */}
+                            <li><a href="#">Unit Testing</a></li>
                             </ul>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </div>
