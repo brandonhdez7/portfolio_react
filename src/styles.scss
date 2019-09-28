@@ -806,6 +806,12 @@ body.light-mode {
         background-color: #f5f5f5;
         color: $dark-content;
     }
+    .form1 input{
+        color: #f2f2f2;
+      }
+    .form1 textarea{
+        color: #f2f2f2;
+    }
     
   }
   
@@ -844,6 +850,12 @@ body.dark-mode {
       &:last-child {
         color: lightblue;
       }
+    }
+    .form1 input{
+        color: #f2f2f2;
+      }
+    .form1 textarea{
+        color: #f2f2f2;
     }
   }
 
@@ -1022,8 +1034,6 @@ body.dark-mode {
     width: 300px;
     border: 2px solid #f2f2f2;
   }
-
-
 
     //home
   .homePage{
@@ -1566,21 +1576,17 @@ body.dark-mode {
 
 @media screen and (max-width: 1024px) {
 
-
-
     //pages
     .page{
         display: flex;
         width: 100%;
         height: 100%;
     }
-
-  hr{
+    hr{
     width: 200px;
     border: 2px solid #f2f2f2;
-  }
-
-  //pages
+    }
+    //pages
   .homePage{
     width: 100%;
     height: 100vh;
@@ -1665,7 +1671,6 @@ body.dark-mode {
   .profileImage img{
     width: 600px;
   }
-
   //skills
   .skillsPage{
     width: 100%;
@@ -2104,7 +2109,7 @@ body.dark-mode {
 
   //pages
   hr{
-    width: 200px;
+    width: 100px;
     border: 2px solid #f2f2f2;
   }
 
@@ -2113,6 +2118,8 @@ body.dark-mode {
     width: 100%;
     height: 94vh;
   }
+
+  //contact
   .contactPage{
     display: flex;
     align-items: center;
@@ -2174,6 +2181,11 @@ body.dark-mode {
     height: 94vh;
     padding-top: 0px; 
   }
+  .aboutPage hr{
+    width: 100px;
+    border: 2px solid #f2f2f2;
+  }
+
   .title{
     display: flex;
     justify-content: center;
@@ -2197,12 +2209,17 @@ body.dark-mode {
   //skills
   .skillsPage{
     width: 100%;
-    height: 100vh;
+    height: 110vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
   }
+  .skillsPage hr{
+    width: 100px;
+    border: 2px solid #f2f2f2;
+  }
+
   .skillsPage p{
       width: 60%;
   }
@@ -2221,42 +2238,42 @@ body.dark-mode {
 }
 .technologyIcons1{
     animation: slide2 0.5s ease-out;
-    margin: 5px;
+    margin: 10px;
 }
 .technologyIcons2{
     animation: slide2 0.8s ease-out;
-    margin: 5px;
+    margin: 10px;
 }
 .technologyIcons3{
     animation: slide2 1s ease-out;
-    margin: 5px;
+    margin: 10px;
 }
 .technologyIcons4{
     animation: slide2 1.2s ease-out;
-    margin: 5px;
+    margin: 10px;
 }
 .technologyIcons5{
     animation: slide2 1.5s ease-out;
-    margin: 5px;
+    margin: 10px;
 }
 .technologyIcons1 i{
-    font-size: 20px;
+    font-size: 25px;
     margin: 10px;
 }
 .technologyIcons2 i{
-    font-size: 20px;
+    font-size: 25px;
     margin: 10px;
 }
 .technologyIcons3 i{
-    font-size: 20px;
+    font-size: 25px;
     margin: 10px;
 }
 .technologyIcons4 i{
-    font-size: 20px;
+    font-size: 25px;
     margin: 10px;
 }
 .technologyIcons5 i{
-    font-size: 20px;
+    font-size: 25px;
     margin: 10px;
 }
 
@@ -2714,12 +2731,59 @@ body.dark-mode {
           height: 50%;
       }
       .threeD{
+          padding: 20px 0px;
           display: flex;
           justify-content: center;
           align-items: center;
           width: 100%;
       }
-    
+
+      .technologyIcons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+    }
+    .technologyIcons1{
+        animation: slide2 0.5s ease-out;
+        margin: 5px;
+    }
+    .technologyIcons2{
+        animation: slide2 0.8s ease-out;
+        margin: 5px;
+    }
+    .technologyIcons3{
+        animation: slide2 1s ease-out;
+        margin: 5px;
+    }
+    .technologyIcons4{
+        animation: slide2 1.2s ease-out;
+        margin: 5px;
+    }
+    .technologyIcons5{
+        animation: slide2 1.5s ease-out;
+        margin: 5px;
+    }
+    .technologyIcons1 i{
+        font-size: 20px;
+        margin: 5px;
+    }
+    .technologyIcons2 i{
+        font-size: 20px;
+        margin: 5px;
+    }
+    .technologyIcons3 i{
+        font-size: 20px;
+        margin: 5px;
+    }
+    .technologyIcons4 i{
+        font-size: 20px;
+        margin: 5px;
+    }
+    .technologyIcons5 i{
+        font-size: 20px;
+        margin: 5px;
+    }
     
     
         //code text
