@@ -74,6 +74,9 @@ $navbar-lightmode: #454545;
             background-color: #f5f5f5;
             color: $dark-content;
         }
+        .projects h1{
+            color: $dark-title;
+        }
         
       }
       
@@ -776,6 +779,13 @@ body.light-mode {
     .navbar {
         background-color: $navbar-lightmode;
       }
+
+      .projects h1{
+        color: $dark-title;
+    }
+    .projects h1:hover{
+        color: $base-color
+    }
     .lightMode{
         color: #333;
         background-color: transparent;
@@ -1043,17 +1053,32 @@ body.dark-mode {
         width: 95%;
         height: 100%;
         color: $content-color;
-        border: 1px solid #f2f2f2;
+        border: 1.3px solid #f2f2f2;
+    }
+    .aboutPage hr{
+        width: 300px;
+        border: 2px solid #f2f2f2;
+        animation: slide1 1s ease-out;
     }
     
     .title h1{
     color: $base-color;
     font-size: $title-text;
+    animation: slide1 0.8s ease-out;
     }
     .title p{
     font-size: 20px;
     width: 350px;
     text-align: center;
+    animation: slide1 1.2s ease-out;
+    }
+    @keyframes slide1 {
+        0% {
+            transform: translateX(-450px);
+        }
+        100% {
+            transform: translateX(0px);
+        }
     }
     .profileImage{
     display: flex;
@@ -1066,9 +1091,16 @@ body.dark-mode {
     .profileImage img{
     width: 450px;
     opacity: 0.7;
-    
+    animation: slide2 1s ease-out;
     }
-
+    @keyframes slide2 {
+        0% {
+            transform: translateX(150px);
+        }
+        100% {
+            transform: translateX(-0px);
+        }
+    }
 //contact
 .contactPage{
   width: 95%;
@@ -1183,12 +1215,75 @@ body.dark-mode {
   border: 1px solid #f2f2f2;
   color: $content-color;
 }
+.skillsPage hr{
+    width: 300px;
+    border: 2px solid #f2f2f2;
+    animation: slide1 1s ease-out;
+}
 .threeD{
   width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  animation: float 4s ease-in-out infinite;
+}
+@keyframes float {
+    0% {
+        transform: translatey(0px);
+    }
+    50% {
+        transform: translatey(-20px);
+    }
+    100% {
+        transform: translatey(0px);
+    }
+}
+.technologyIcons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.technologyIcons1{
+    animation: slide2 0.5s ease-out;
+    margin: 10px;
+}
+.technologyIcons2{
+    animation: slide2 0.8s ease-out;
+    margin: 10px;
+}
+.technologyIcons3{
+    animation: slide2 1s ease-out;
+    margin: 10px;
+}
+.technologyIcons4{
+    animation: slide2 1.2s ease-out;
+    margin: 10px;
+}
+.technologyIcons5{
+    animation: slide2 1.5s ease-out;
+    margin: 10px;
+}
+.technologyIcons1 i{
+    font-size: 60px;
+    margin: 10px;
+}
+.technologyIcons2 i{
+    font-size: 60px;
+    margin: 10px;
+}
+.technologyIcons3 i{
+    font-size: 60px;
+    margin: 10px;
+}
+.technologyIcons4 i{
+    font-size: 60px;
+    margin: 10px;
+}
+.technologyIcons5 i{
+    font-size: 60px;
+    margin: 10px;
 }
 
 
@@ -1214,14 +1309,34 @@ body.dark-mode {
  }
  .projects{
     width: 100%;
-    height: max-content;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 200px;
-
+    margin-top: 0px;
  }
+ .projects h1{
+    color: white;
+    font-size: 55px;
+    font-weight: 800;
+    transform: perspective(900px) rotateY(65deg);
+    outline: none;
+    text-decoration: none;
+    cursor: pointer;
+ }
+ .projects h1:hover{
+     color: $base-color
+ }
+ @keyframes slide3 {
+    0% {
+        transform: translateY(400px);
+    }
+    100% {
+        transform: translateY(-0px);
+    }
+}
 
+  
 
 //modal box
 .btn {
@@ -1373,6 +1488,7 @@ body.dark-mode {
         padding: 0px;
         position: relative;
         top: 15px;
+        animation: slide1 1s ease-out;
     }
     .end1{
         font-family: 'Kalam', cursive;
@@ -1382,6 +1498,7 @@ body.dark-mode {
         width: 40%;
         position: relative;
         bottom: 5px;
+        animation: slide1 1s ease-out;
     }
     .code2{
         font-family: 'Kalam', cursive;
@@ -1392,6 +1509,7 @@ body.dark-mode {
         padding: 0px;
         position: relative;
         top: 15px;
+        animation: slide1 1s ease-out;
     }
     .end2{
         font-family: 'Kalam', cursive;
@@ -1401,6 +1519,7 @@ body.dark-mode {
         width: 38%;
         position: relative;
         bottom: 5px;
+        animation: slide1 1s ease-out;
     }
     .code3{
         font-family: 'Kalam', cursive;

@@ -2,7 +2,8 @@ const HtmlWebPackPlugin = require("html-webpack-plugin");
 const path = require('path');
 const htmlPlugin = new HtmlWebPackPlugin({
   template: "./src/index.html", 
-  filename: "./index.html"
+  filename: "./index.html",
+  favicon: 'src/images/favicon.ico'
 });
 module.exports = {
   entry: "./src/index.js",
@@ -25,7 +26,7 @@ module.exports = {
         use: ['style-loader', 'css-loader', 'sass-loader']
       },
       {
-        test: /\.(png|svg|jpg|gif)$/,
+        test: /\.(png|svg|jpg|gif|ico)$/,
         loader: "file-loader",
         options: { name: '/static/[name].[ext]' }
       }

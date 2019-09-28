@@ -31,6 +31,9 @@ app.get('/Contact', (req, res) => {
 app.get('/Header', (req, res) => {
   res.sendFile(HTML_FILE);
 });
+app.get('/Projects1', (req, res) => {
+  res.sendFile(HTML_FILE);
+});
 app.listen(port, function () {
  console.log('App listening on port: ' + port);
 });
