@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import CoffeeImg from '../../Images/coffee2.png'
+import TalasHarbor from '../../Images/talasharbor.png'
 
 class Modal1 extends Component {
     constructor (props) {
@@ -22,38 +22,38 @@ class Modal1 extends Component {
       return (
         <div className="proModal">
           <button onClick={this.modalToggle} className="zoom-effect-container">
-            <div className="image-card">
-                <img src={CoffeeImg}/>
-            </div>
-        </button>
+              <div className="image-card">
+                  <img src={TalasHarbor}/>
+              </div>
+          </button>
           
           <div className={containerClass}>
             <div className='modal-header'>
-              <div className="projectName">
-                  <h1>ATL X COFFEE</h1>
+              <div class="projectName">
+                <h1>The Budget Hobo</h1>
               </div>
-              <div className="projectName">
-                  <h1>Font-End Project</h1>
+              <div class="projectName">
+                  <h1>Back-End Project</h1>
               </div>
             </div>
             <div className='modal-body'>
-              <div className="screenShot">
-                <img src={CoffeeImg} />
+              <div className="screenShot">               
+                <img src={TalasHarbor} alt=""/>
               </div>
               <div className="projectLinks">
-                <h3>Technologies used</h3>
-                <p>HTML, CSS, Javascript, jQuery</p>
+                  <h3>Technologies used</h3>
+                  <p>HTML, CSS, Javascript, jQuery, Node.js, Express, MySQL, Bootstrap, Plaid API</p>
             
-                <p>Atlanta X Coffee, one of my very first projects, is the to-go for all coffee lovers.
-                    this application will share everything you need to know about any trendy coffee shop in the Atlanta area
-                    and is the easiest way to pick your new favorite coffee spot.
-                </p>
+                  <p>The Budget Hobo allows the user to create a profile, set up a budget, connect to your bank through my website and
+                  download your bank transactions. You can view your budget performance with a budget calculator where 
+                  you can keep track of all your expenses. 
+                  </p>
               </div>
-            </div>
+              </div>
             <div className='modal-footer'>
               <div className="sites">
-                <a href="https://github.com/brandonhdez7/Coffee-Shops-in-Atlanta" target="_blank"><i className="fab fa-github icon-3d"></i>  Github</a>
-                <a href="#" target="_blank"><i className="fas fa-desktop icon-3d"></i>  Live Demo</a>
+                  <a href="https://github.com/brandonhdez7/backendProject" target="_blank"><i className="fab fa-github icon-3d"></i>  Github</a>
+                  <a href="#" target="_blank"><i className="fas fa-desktop icon-3d"></i>  Live Demo</a>
               </div>
             </div>
           </div>

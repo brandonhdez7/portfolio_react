@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import travel3 from '../../Images/travel3.png'
+import TravelImg from '../../Images/travel3.png'
 
 class Modal1 extends Component {
     constructor (props) {
@@ -20,8 +20,12 @@ class Modal1 extends Component {
       const coverClass = this.state.modalOpened ? 'modal-cover modal-cover-active' : 'modal-cover'
       const containerClass = this.state.modalOpened ? 'modal-container modal-container-active' : 'modal-container'
       return (
-        <div>
-          <button className='btn' onClick={this.modalToggle}>Travel Agency<br/>(Front-end Project</button>
+        <div className="proModal">
+          <button onClick={this.modalToggle} className="zoom-effect-container">
+                <div className="image-card">
+                    <img src={TravelImg}/>
+                </div>
+          </button>
           
           <div className={containerClass}>
             <div className='modal-header'>
@@ -34,7 +38,7 @@ class Modal1 extends Component {
             </div>
             <div className='modal-body'>
               <div className="screenShot">
-                <img src={travel3} alt=""/>
+                <img src={TravelImg} alt=""/>
               </div>
               <div className="projectLinks">
                 <h3>Technologies used</h3>

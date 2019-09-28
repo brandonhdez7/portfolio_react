@@ -5,14 +5,15 @@ import Modal1 from './Modal1'
 import Modal2 from './Modal2'
 import Modal3 from './Modal3'
 import Modal4 from './Modal4'
-import styled from 'styled-components';
-import Slider from 'react-slick';
-import budgetImg from '../../Images/thebudgethobo.png'
+import Modal5 from './Modal5'
+import Modal6 from './Modal6'
+// import styled from 'styled-components';
+// import Slider from 'react-slick';
 
-const Wrapper = styled.div`
-    width: 90%;
-    animation: slide3 1s ease-out;
-`
+// const Wrapper = styled.div`
+//     width: 90%;
+//     animation: slide3 1s ease-out;
+// `
 
 
 
@@ -20,81 +21,81 @@ const Wrapper = styled.div`
 class Projects extends Component {
 
     render () {
-        let settings = {
-            centerMode: true,
-            centerPadding: '50px',
-            arrows: false,
-            speed: 500,
-            initialSlide: true,
-            slidesToShow: 3,
-            slidesToScroll: 1,
-            infinite: false,
-            autoplay: true,
-            focusOnSelect: true,
-            autoplaySpeed: 5000,
-            vertical: true,
-            verticalSwiping: true,
-            swipeToSlide: true,
-            responsive: [
-              {
-                breakpoint: 1024,
-                settings: { 
-                    centerMode: true,
-                    centerPadding: '40px',
-                    arrows: false,
-                    speed: 500,
-                    initialSlide: true,
-                    slidesToShow: 3,
-                    slidesToScroll: 1,
-                    infinite: false,
-                    autoplay: true,
-                    focusOnSelect: true,
-                    autoplaySpeed: 5000,
-                    vertical: true,
-                    verticalSwiping: true,
-                    swipeToSlide: true,
-                 }
-              },
-              {
-                breakpoint: 768,
-                settings: { 
-                    centerMode: true,
-                    centerPadding: '50px',
-                    arrows: false,
-                    speed: 500,
-                    initialSlide: true,
-                    slidesToShow: 3,
-                    slidesToScroll: 1,
-                    infinite: false,
-                    autoplay: true,
-                    focusOnSelect: true,
-                    autoplaySpeed: 5000,
-                    vertical: true,
-                    verticalSwiping: true,
-                    swipeToSlide: true,
-                 }
-              },
-              {
-                breakpoint: 480,
-                settings: { 
-                    centerMode: true,
-                    centerPadding: '50px',
-                    arrows: false,
-                    speed: 500,
-                    initialSlide: true,
-                    slidesToShow: 3,
-                    slidesToScroll: 1,
-                    infinite: false,
-                    autoplay: true,
-                    focusOnSelect: true,
-                    autoplaySpeed: 5000,
-                    vertical: true,
-                    verticalSwiping: true,
-                    swipeToSlide: true,
-                 }
-              },
-            ]
-          }; 
+        // let settings = {
+        //     centerMode: true,
+        //     centerPadding: '50px',
+        //     arrows: false,
+        //     speed: 500,
+        //     initialSlide: true,
+        //     slidesToShow: 3,
+        //     slidesToScroll: 1,
+        //     infinite: false,
+        //     autoplay: true,
+        //     focusOnSelect: true,
+        //     autoplaySpeed: 5000,
+        //     vertical: true,
+        //     verticalSwiping: true,
+        //     swipeToSlide: true,
+        //     responsive: [
+        //       {
+        //         breakpoint: 1024,
+        //         settings: { 
+        //             centerMode: true,
+        //             centerPadding: '40px',
+        //             arrows: false,
+        //             speed: 500,
+        //             initialSlide: true,
+        //             slidesToShow: 3,
+        //             slidesToScroll: 1,
+        //             infinite: false,
+        //             autoplay: true,
+        //             focusOnSelect: true,
+        //             autoplaySpeed: 5000,
+        //             vertical: true,
+        //             verticalSwiping: true,
+        //             swipeToSlide: true,
+        //          }
+        //       },
+        //       {
+        //         breakpoint: 768,
+        //         settings: { 
+        //             centerMode: true,
+        //             centerPadding: '50px',
+        //             arrows: false,
+        //             speed: 500,
+        //             initialSlide: true,
+        //             slidesToShow: 3,
+        //             slidesToScroll: 1,
+        //             infinite: false,
+        //             autoplay: true,
+        //             focusOnSelect: true,
+        //             autoplaySpeed: 5000,
+        //             vertical: true,
+        //             verticalSwiping: true,
+        //             swipeToSlide: true,
+        //          }
+        //       },
+        //       {
+        //         breakpoint: 480,
+        //         settings: { 
+        //             centerMode: true,
+        //             centerPadding: '50px',
+        //             arrows: false,
+        //             speed: 500,
+        //             initialSlide: true,
+        //             slidesToShow: 3,
+        //             slidesToScroll: 1,
+        //             infinite: false,
+        //             autoplay: true,
+        //             focusOnSelect: true,
+        //             autoplaySpeed: 5000,
+        //             vertical: true,
+        //             verticalSwiping: true,
+        //             swipeToSlide: true,
+        //          }
+        //       },
+        //     ]
+        //   }; 
       return(
           <div className="page">
             <Header />
@@ -107,20 +108,17 @@ class Projects extends Component {
                     <hr/>
                 </div>
                 <div className="projects">
-                    <Wrapper>
-                        <Slider {...settings}>
-                                <h1>FULL-STACK</h1>
-                            
-                                <h1>FULL-STACK</h1>
-                            
-                                <h1>FRONT-END</h1>
-                            
-                                <h1>BACK-END</h1>
-                            
-                                <h1>WORDPRESS</h1>
-                        
-                        </Slider>
-                    </Wrapper>
+                    <Modal4 />
+                    
+                    <Modal1 />
+                
+                    <Modal2 />
+                    
+                    <Modal3 />
+                    
+                    <Modal6 />
+
+                    <Modal5 />
                 </div>
             </div>
           </div>
