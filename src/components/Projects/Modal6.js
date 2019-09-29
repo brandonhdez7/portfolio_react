@@ -30,10 +30,10 @@ class Modal1 extends Component {
           <div className={containerClass}>
             <div className='modal-header'>
               <div class="projectName">
-                <h1>The Budget Hobo</h1>
+                <h1>Black Bird</h1>
               </div>
               <div class="projectName">
-                  <h1>Back-End Project</h1>
+                  <h1>Full-Stack Project</h1>
               </div>
             </div>
             <div className='modal-body'>
@@ -42,12 +42,14 @@ class Modal1 extends Component {
               </div>
               <div className="projectLinks">
                   <h3>Technologies used</h3>
-                  <p>HTML, CSS, Javascript, jQuery, Node.js, Express, MySQL, Bootstrap, Plaid API</p>
+                  <p>Stripe, HTML, CSS, Javascript, Node.js, Express, MySQL, Sequelize, Redux, React, WebPack, XD Adobe</p>
             
-                  <p>The Budget Hobo allows the user to create a profile, set up a budget, connect to your bank through my website and
-                  download your bank transactions. You can view your budget performance with a budget calculator where 
-                  you can keep track of all your expenses. 
-                  </p>
+                  <p>There is a wide acceptance that manual brewing methods allow for 
+                    better quality control and a superior coffee experience. For many, 
+                    it’s more fun and fascinating to have a hands-on approach with their 
+                    brewing process rather than hitting a ‘brew’ button on a machine. With this 
+                    web application/ecommerce page we help you brew the great coffee.
+                   </p>
               </div>
               </div>
             <div className='modal-footer'>

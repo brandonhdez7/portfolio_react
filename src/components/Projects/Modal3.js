@@ -42,7 +42,7 @@ class Modal1 extends Component {
               </div>
               <div className="projectLinks">
                 <h3>Technologies used</h3>
-                <p>HTML, CSS, Javascript, jQuery, Amadeus API, AWS</p>
+                <p>HTML, CSS, Javascript, jQuery, Rest API, AWS</p>
 
                 <p>The Proffesional Hobo intergrates with real time api data where the user can select an origin and a destination, 
                 along with a departing and returning date.

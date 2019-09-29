@@ -42,7 +42,7 @@ class Modal1 extends Component {
               </div>
               <div className="projectLinks">
                   <h3>Technologies used</h3>
-                  <p>HTML, CSS, Javascript, jQuery, Node.js, Express, MySQL, Bootstrap, Plaid API</p>
+                  <p>HTML, CSS, Javascript, jQuery, Node.js, Express, MySQL, Bootstrap, Rest API</p>
             
                   <p>The Budget Hobo allows the user to create a profile, set up a budget, connect to your bank through my website and
                   download your bank transactions. You can view your budget performance with a budget calculator where 

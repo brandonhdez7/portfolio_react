@@ -42,7 +42,7 @@ class Modal1 extends Component {
               </div>
               <div className="projectLinks">
                 <h3>Technologies used</h3>
-                <p>React, Node.js, Javascript, Socket.IO, Firebase, Raspberry pi, Johnny-Five, CSS</p>
+                <p>React, Redux, Node.js,Express, Javascript, Socket.IO, Firebase, Raspberry pi, Johnny-Five, CSS</p>
                 <p>
                     We build a full-stack web app that let us control our Raspberry pi RC car that we builded or any person's build RC car.
                     User can register and/or login with Google or Twitter.

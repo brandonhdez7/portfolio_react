@@ -110,14 +110,14 @@ class Projects extends Component {
                 <div className="projects">
                     <Modal4 />
                     
+                    <Modal6 />
+                    
                     <Modal1 />
                 
                     <Modal2 />
                     
                     <Modal3 />
                     
-                    <Modal6 />
-
                     <Modal5 />
                 </div>
             </div>

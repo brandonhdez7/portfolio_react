@@ -30,10 +30,10 @@ class Modal1 extends Component {
           <div className={containerClass}>
             <div className='modal-header'>
               <div class="projectName">
-                <h1>The Budget Hobo</h1>
+                <h1>Talas Harbor</h1>
               </div>
               <div class="projectName">
-                  <h1>Back-End Project</h1>
+                  <h1>Wordpress Project</h1>
               </div>
             </div>
             <div className='modal-body'>
@@ -42,18 +42,18 @@ class Modal1 extends Component {
               </div>
               <div className="projectLinks">
                   <h3>Technologies used</h3>
-                  <p>HTML, CSS, Javascript, jQuery, Node.js, Express, MySQL, Bootstrap, Plaid API</p>
+                  <p>Wordpress, Web Hosting, Slick-slider</p>
             
-                  <p>The Budget Hobo allows the user to create a profile, set up a budget, connect to your bank through my website and
-                  download your bank transactions. You can view your budget performance with a budget calculator where 
-                  you can keep track of all your expenses. 
+                  <p>Talas Harbor is devoted to helping generetic patients heal mentally and emotionally
+                    by proving expectionallyby proving psychatric care to expedite the recoveryof elderly patients
+                    in distress.
                   </p>
               </div>
               </div>
             <div className='modal-footer'>
               <div className="sites">
-                  <a href="https://github.com/brandonhdez7/backendProject" target="_blank"><i className="fab fa-github icon-3d"></i>  Github</a>
-                  <a href="#" target="_blank"><i className="fas fa-desktop icon-3d"></i>  Live Demo</a>
+                  <a href="#" target="_blank"><i className="fab fa-github icon-3d"></i>  Github</a>
+                  <a href="http://talasharborbullheadcity.com/" target="_blank"><i className="fas fa-desktop icon-3d"></i>  Live Demo</a>
               </div>
             </div>
           </div>
